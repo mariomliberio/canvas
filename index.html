@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas test </title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="320px" height="240px">
+
+    </canvas>
+    <script>
+      let myCanvas = document.querySelector('#myCanvas');
+      console.log(myCanvas);
+      let ctx = myCanvas.getContext("2d");
+      ctx.beginPath;
+      ctx.moveTo(50,100);
+      ctx.lineTo(100,250);
+      ctx.lineWidth = 10;
+      ctx.moveTo(150,30);
+      ctx.lineTo(330,450);
+      ctx.lineWidth = 10;
+      ctx.moveTo(330,30);
+      ctx.lineTo(25,12);
+      ctx.lineWidth = 10;
+      ctx.fillStyle = '#FEE';
+      ctx.fillRect(10, 100, 300, 300);
+      ctx.fill();
+      ctx.strokeStyle = '#0DD';
+      ctx.stroke(); 
+      console.dir(ctx);
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flag</title>
+</head>
+<body>
+    <canvas id="myCanvas" height="480" width="640">
+
+    </canvas>
+    <script>
+        let myCanvas = document.querySelector('#myCanvas')
+        let ctx = myCanvas.getContext("2d");
+        ctx.beginPath;
+        ctx.fillStyle = '#000';
+        ctx.fillRect(0, 0, 213, 480);
+        ctx.fillStyle = '#ffff00';
+        ctx.fillRect(213, 0, 213, 480);
+        ctx.fillStyle = '#ff0000';
+        ctx.fillRect(426, 0, 213, 480);
+    </script>
+</body>
+</html>

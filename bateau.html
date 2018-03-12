@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bateau</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="640" height="480"></canvas>
+    <script>
+        let myCanvas = document.querySelector('#myCanvas');
+        let ctx = myCanvas.getContext("2d");
+        ctx.beginPath;
+        ctx.strokeStyle = '#0DD';
+        ctx.moveTo(40,240);
+        ctx.lineTo(400,240);
+        ctx.lineWidth = 5;
+        ctx.stroke();
+        ctx.moveTo(265, 240);
+        ctx.lineTo(265, 30);
+        ctx.lineWidth = 5;
+        ctx.stroke();
+        ctx.moveTo(265, 30);
+        ctx.lineTo(340, 150);
+        ctx.lineWidth = 5;
+        ctx.stroke();
+        ctx.moveTo(340, 150);
+        ctx.lineTo(265, 150);
+        ctx.lineWidth = 5;
+        ctx.stroke();
+     let x = 220;
+      let y = 240;
+      let radius = 180;
+      let startAngle = 1.0 * Math.PI;
+      let endAngle = 2.0 * Math.PI;
+      let counterClockwise = true;
+
+      ctx.beginPath();
+      ctx.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+      ctx.lineWidth = 5;
+
+      // line color
+      ctx.strokeStyle = '#0DD';
+      ctx.stroke();
+    </script>
+  </body>
+    </script>
+</body>
+</html>
